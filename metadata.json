@@ -1,0 +1,5 @@
+{
+  "name": "Analisis Tren Pasar",
+  "description": "Alat bertenaga AI yang menggunakan Natural Language Processing (NLP) untuk menganalisis data dari media sosial, forum, dan artikel berita. Ini mengidentifikasi tren pasar, keluhan konsumen, dan peluang produk baru, memberikan ringkasan sentimen pasar dalam hitungan menit.",
+  "requestFramePermissions": []
+}
