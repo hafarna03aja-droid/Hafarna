@@ -1,0 +1,5 @@
+{
+  "name": "Market Trend Analysis",
+  "description": "An AI-powered tool that uses Natural Language Processing (NLP) to analyze data from social media, forums, and news articles. It identifies market trends, consumer complaints, and new product opportunities, providing a summary of market sentiment in minutes.",
+  "requestFramePermissions": []
+}
