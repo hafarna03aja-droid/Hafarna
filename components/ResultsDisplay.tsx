@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> e2c5bb55a15deda66cd851d3b6cf324b91dcc05c
 import React from 'react';
 import type { AnalysisResult } from '../types';
 import SentimentChart from './SentimentChart';
@@ -13,65 +10,39 @@ interface ResultsDisplayProps {
 
 const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ result }) => {
   const chartData = [
-<<<<<<< HEAD
     { name: 'Positif', value: result.sentimentAnalysis.positive, fill: '#22c55e' },
     { name: 'Netral', value: result.sentimentAnalysis.neutral, fill: '#64748b' },
     { name: 'Negatif', value: result.sentimentAnalysis.negative, fill: '#ef4444' },
-=======
-    { name: 'Positive', value: result.sentimentAnalysis.positive, fill: '#22c55e' },
-    { name: 'Neutral', value: result.sentimentAnalysis.neutral, fill: '#64748b' },
-    { name: 'Negative', value: result.sentimentAnalysis.negative, fill: '#ef4444' },
->>>>>>> e2c5bb55a15deda66cd851d3b6cf324b91dcc05c
   ];
 
   return (
     <div className="space-y-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="md:col-span-2 p-6 bg-slate-800/50 border border-slate-700 rounded-lg animate-slide-up" style={{ animationDelay: '100ms' }}>
-<<<<<<< HEAD
           <h3 className="text-xl font-bold mb-3 text-brand-light">Ringkasan Keseluruhan</h3>
           <p className="text-slate-300 leading-relaxed">{result.summary}</p>
         </div>
         <div className="p-6 bg-slate-800/50 border border-slate-700 rounded-lg animate-slide-up" style={{ animationDelay: '200ms' }}>
           <h3 className="text-xl font-bold mb-3 text-center text-brand-light">Analisis Sentimen</h3>
-=======
-          <h3 className="text-xl font-bold mb-3 text-brand-light">Overall Summary</h3>
-          <p className="text-slate-300 leading-relaxed">{result.summary}</p>
-        </div>
-        <div className="p-6 bg-slate-800/50 border border-slate-700 rounded-lg animate-slide-up" style={{ animationDelay: '200ms' }}>
-          <h3 className="text-xl font-bold mb-3 text-center text-brand-light">Sentiment Analysis</h3>
->>>>>>> e2c5bb55a15deda66cd851d3b6cf324b91dcc05c
           <SentimentChart data={chartData} />
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <ResultCard
-<<<<<<< HEAD
           title="Tren Utama"
-=======
-          title="Key Trends"
->>>>>>> e2c5bb55a15deda66cd851d3b6cf324b91dcc05c
           icon={<TrendUpIcon />}
           items={result.keyTrends}
           animationDelay="300ms"
         />
         <ResultCard
-<<<<<<< HEAD
           title="Keluhan Konsumen"
-=======
-          title="Consumer Complaints"
->>>>>>> e2c5bb55a15deda66cd851d3b6cf324b91dcc05c
           icon={<AlertIcon />}
           items={result.consumerComplaints}
           animationDelay="400ms"
         />
         <ResultCard
-<<<<<<< HEAD
           title="Peluang Produk"
-=======
-          title="Product Opportunities"
->>>>>>> e2c5bb55a15deda66cd851d3b6cf324b91dcc05c
           icon={<LightbulbIcon />}
           items={result.productOpportunities}
           animationDelay="500ms"
@@ -94,8 +65,4 @@ const LightbulbIcon = () => (
 );
 
 
-<<<<<<< HEAD
 export default ResultsDisplay;
-=======
-export default ResultsDisplay;
->>>>>>> e2c5bb55a15deda66cd851d3b6cf324b91dcc05c
