@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "analisis-tren-pasar",
+=======
+  "name": "market-trend-analysis",
+>>>>>>> e2c5bb55a15deda66cd851d3b6cf324b91dcc05c
   "private": true,
   "version": "0.0.0",
   "type": "module",
